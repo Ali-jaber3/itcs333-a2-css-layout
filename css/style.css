@@ -5,3 +5,146 @@
 /* TODO: style .card (padding, border, gap) and .card-grid (display, gap, 3 columns) */
 /* TODO: style form inputs (padding) and a :focus state */
 /* TODO: add a @media (max-width: 700px) query collapsing .card-grid to one column */
+
+
+body {
+    margin: 12px   ;/* <!--   هذا نضيف مسافة في بداية الصفخة   -->*/
+    background-color: #cecece
+}
+
+#site-header {
+        text-align: center;             /*النص في النص  */
+
+    padding: 22px; /*  هذا نضيف مسافة في المربع الحوف */
+    background-color: #109c95;
+    
+    color: white; /*font color  */
+    border-bottom: 3px solid #38bdf8;/* solid ,dashed for add line in end_____ */
+        border-radius: 20px;            /*   الحواف الانحناء*/
+
+}
+
+ a {
+    
+    margin-right: 45px;  /*مساحة بين الروابط   */
+    color: yellow;
+    /* text-decoration: none; delate line in link________*/ 
+}
+
+
+.content-section {
+    margin-bottom: 24px;/*  مساحة بين الفقرات (الاقسام الرصاصي)*/
+    padding: 20px; /* مساحة في الحواف */
+    background-color: white;
+    border: 1px solid #cecece;/* لون الخلفية */
+    border-radius: 25px; /*  حواف ناعمة مقدارها */
+}
+
+
+.schedule-table {
+    width: 70%;
+    border-collapse: collapse;
+}
+
+
+
+.schedule-table th,
+.schedule-table td {
+    padding: 10px; /* مساحة في الاطراف  -        يبعد النص عن حواف الخلايا. */
+    border: 2px solid #d1d5db; /*  ,thin the حواف الجدول           dashed ,solid*/
+   /*  text-align:left   center  --> mid */
+}
+
+
+.schedule-table th {
+    background-color: #b86ae5; /* add full color for header taberl  */
+}
+
+
+.card-grid {
+    display: grid;   /*  grid, Flex         Flexbox 1D --> or         Grid 2D*/
+
+       grid-template-columns: repeat(3, 1fr);  /*  3 columns ,  1fr == الكل متساوي (عادل)*/
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    
+
+    gap: 20px;   /* الفراغ بين المربعات */
+}
+
+.card {
+    padding: 12px; /* مسافة في جميع الحواف */
+    border: 2px solid #102850; /* لون الحواف */
+    border-radius: 15px; /* انحناء الحواف */
+    background-color: #fecf84;   /* لون المربع */
+}
+
+@media (max-width: 700px) {           /*  اذا تقق الشرط*/      /* اذا عرض الصفحة صارات صغيرة يحولة الى قائمة  */
+    .card-grid {        /* اختيار عناصر البطاقات */
+       grid-template-columns: 1fr;  /*  اجعلهم ياخدون حصة واحدة */
+       /*  grid-template-columns: 100px 200px 100px 300px;   العمود 1و2و3*/
+    }
+}
+/*  */
+
+
+
+.weight { /* grade 40,25,20,15%  */
+    font-size: 24px; 
+    font-weight: bold;  
+    color: #920b0b;
+}
+
+
+.register-form {
+    display: flex; /* يجعلها مرنة قابلة للتمدد والتكيف على الصفحة */
+    flex-direction: column;/* يجعلها افقية كل عنصر في سطر  */
+    gap: 18px;/*  مسافة بين العناصر */
+
+}
+
+
+.register-form input {               /*لحقل الادخال input feade  */
+    width: 90%;                      /* % من مساحة الصفحة */
+    padding: 10px;                     /* المساحة */
+    border: 2px solid #061229;       /*  الاطار*/
+    border-radius: 22px;                 /*  الانحناء الحواف الحادة*/
+}
+
+
+.register-form input:focus {             /* اذا وقفت علية */
+    outline: 3px dashed #f7c44eec;       /* الاطار */
+    outline-offset: 2px;                /* البعج عن الحواف */
+    border-color: #466bba;           /* تحويل لون الاطار الاساسي الى لون هذا */
+}
+
+
+
+
+.btn-primary {                  /* شكل زر التسليم */
+    padding: 10px 16px;           /*المقاس  */
+    background-color: #17365d;  /*لون الخلفية  */
+    color: white;               /*  لون الخط*/
+    border: 2px solid #000000;  /* الاطار */
+    border-radius: 20px;            /*   الحواف الانحناء*/
+    cursor: pointer;                /*   عند التمرير عليةيجعلة*/
+}
+
+
+
+.btn-primary:hover {         /* اجعل الزر شفاف عند التمرير علية */               
+    background-color: #254f80;
+}
+
+
+.site-footer {                      /*  */
+    padding: 16px;                  /*  مساحة في الاطراف*/
+    text-align: center;             /*النص في النص  */
+    background-color: #17365d;    /* اللون الخلفية */
+    color: white;                 /*لون الخط  */
+    border-radius: 25px;            /*   الحواف الانحناء*/
+    font-size: 33px;    
+
+}
+
+
+
