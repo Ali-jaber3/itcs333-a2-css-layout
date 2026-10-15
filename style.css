@@ -36,8 +36,12 @@ body {
 
 .schedule-table th,
 .schedule-table td {
-    padding: 10px; /* مساحة في الاطراف  */
+    padding: 10px; /* مساحة في الاطراف  -        يبعد النص عن حواف الخلايا. */
     border: 2px solid #d1d5db; /*  ,thin the حواف الجدول           dashed ,solid*/
    /*  text-align:left   center  --> mid */
 }
 
+
+.schedule-table th {
+    background-color: #b86ae5;
+}
