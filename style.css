@@ -1,0 +1,12 @@
+body {
+    margin: 10   ;/* <!--   هذا نضيف مسافة في بداية الصفخة   -->*/
+    background-color: #cecece
+}
+
+#site-header {
+    padding: 22px; /*  هذا نضيف مسافة في المربع الحوف */
+    background-color: #109c95;
+    
+    color: white; /*font color  */
+    border-bottom: 3px solid #38bdf8;/*  */
+}
