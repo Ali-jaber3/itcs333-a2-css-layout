@@ -8,11 +8,36 @@ body {
     background-color: #109c95;
     
     color: white; /*font color  */
-    border-bottom: 3px solid #38bdf8;/* solid ,dashed for add line in end */
+    border-bottom: 3px solid #38bdf8;/* solid ,dashed for add line in end_____ */
 }
 
  a {
     margin-right: 60px;/*مساحة بين الروابط   */
     color: yellow;
-    /* text-decoration: none; del line in link*/ 
+    /* text-decoration: none; delate line in link________*/ 
 }
+
+
+.content-section {
+    margin-bottom: 24px;/*  مساحة بين الفقرات (الاقسام الرصاصي)*/
+    padding: 20px; /* مساحة في الحواف */
+    background-color: white;
+    border: 1px solid #cecece;/* لون الخلفية */
+    border-radius: 25px; /*  حواف ناعمة مقدارها */
+}
+
+
+.schedule-table {
+    width: 70%;
+    border-collapse: collapse;
+}
+
+
+
+.schedule-table th,
+.schedule-table td {
+    padding: 10px; /* مساحة في الاطراف  */
+    border: 2px solid #d1d5db; /*  ,thin the حواف الجدول           dashed ,solid*/
+   /*  text-align:left   center  --> mid */
+}
+
