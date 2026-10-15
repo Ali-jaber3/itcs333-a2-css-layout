@@ -1,5 +1,5 @@
 body {
-    margin: 10   ;/* <!--   هذا نضيف مسافة في بداية الصفخة   -->*/
+    margin: 12px   ;/* <!--   هذا نضيف مسافة في بداية الصفخة   -->*/
     background-color: #cecece
 }
 
@@ -55,7 +55,9 @@ body {
 .card-grid {
     display: grid;   /*  grid, Flex         Flexbox 1D --> or         Grid 2D*/
 
-    grid-template-columns: repeat(3, 1fr);  /*  3 columns ,  1fr == الكل متساوي (عادل)*/
+       grid-template-columns: repeat(3, 1fr);  /*  3 columns ,  1fr == الكل متساوي (عادل)*/
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    
 
     gap: 20px;   /* الفراغ بين المربعات */
 }
@@ -67,7 +69,12 @@ body {
     background-color: #fecf84;   /* لون المربع */
 }
 
-
+@media (max-width: 700px) {           /*  اذا تقق الشرط*/      /* اذا عرض الصفحة صارات صغيرة يحولة الى قائمة  */
+    .card-grid {        /* اختيار عناصر البطاقات */
+       grid-template-columns: 1fr;  /*  اجعلهم ياخدون حصة واحدة */
+       /*  grid-template-columns: 100px 200px 100px 300px;   العمود 1و2و3*/
+    }
+}
 /*  */
 
 
@@ -129,4 +136,6 @@ body {
     font-size: 33px;    
 
 }
+
+
 
