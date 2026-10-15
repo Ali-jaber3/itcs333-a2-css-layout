@@ -45,3 +45,22 @@ body {
 .schedule-table th {
     background-color: #b86ae5; /* add full color for header taberl  */
 }
+
+
+.card-grid {
+    display: grid;   /*  grid, Flex         Flexbox 1D --> or         Grid 2D*/
+
+    grid-template-columns: repeat(3, 1fr);  /*  3 columns ,  1fr == الكل متساوي (عادل)*/
+
+    gap: 20px;   /* الفراغ بين المربعات */
+}
+
+.card {
+    padding: 12px; /* مسافة في جميع الحواف */
+    border: 2px solid #102850; /* لون الحواف */
+    border-radius: 15px; /* انحناء الحواف */
+    background-color: #fecf84;   /* لون المربع */
+}
+
+
+/*  */
