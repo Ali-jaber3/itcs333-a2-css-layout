@@ -8,5 +8,11 @@ body {
     background-color: #109c95;
     
     color: white; /*font color  */
-    border-bottom: 3px solid #38bdf8;/*  */
+    border-bottom: 3px solid #38bdf8;/* solid ,dashed for add line in end */
+}
+
+ a {
+    margin-right: 60px;/*مساحة بين الروابط   */
+    color: yellow;
+    /* text-decoration: none; del line in link*/ 
 }
