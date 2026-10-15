@@ -68,7 +68,15 @@ body {
 
 
 .weight {
-    font-size: 24px;
+    font-size: 24px; 
     font-weight: bold;  
     color: #920b0b;
+}
+
+
+.register-form {
+    display: flex; /* يجعلها مرنة قابلة للتمدد والتكيف على الصفحة */
+    flex-direction: column;/* يجعلها افقية كل عنصر في سطر  */
+    gap: 18px;/*  مسافة بين العناصر */
+
 }
