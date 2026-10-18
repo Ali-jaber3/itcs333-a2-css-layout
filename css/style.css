@@ -12,17 +12,17 @@ body {
     background-color: #cecece
 }
 
-#site-header {
-        text-align: center;             /*النص في النص  */
-
+#site-header {      /*     بداية الصفحة العنوان     */  
+    text-align: center;             /*النص في النص  */
     padding: 22px; /*  هذا نضيف مسافة في المربع الحوف */
     background-color: #109c95;
-    
     color: white; /*font color  */
     border-bottom: 3px solid #38bdf8;/* solid ,dashed for add line in end_____ */
-        border-radius: 20px;            /*   الحواف الانحناء*/
+    border-radius: 20px;            /*   الحواف الانحناء*/
 
 }
+
+/*  */
 
  a {
     
@@ -31,22 +31,31 @@ body {
     /* text-decoration: none; delate line in link________*/ 
 }
 
+/*  */
 
-.content-section {
+.content-section {     /*  اعدادات مربع الاقسام  */
     margin-bottom: 24px;/*  مساحة بين الفقرات (الاقسام الرصاصي)*/
+    margin-top: 24px;
     padding: 20px; /* مساحة في الحواف */
     background-color: white;
-    border: 1px solid #cecece;/* لون الخلفية */
+    border: 1px solid #38bdf8;/* لون الخلفية */
     border-radius: 25px; /*  حواف ناعمة مقدارها */
+    border-bottom: 3px solid #38bdf8;/* solid ,dashed for add line in end_____ */
+
+}
+
+/*  */
+
+.schedule-table {      /* ادادات الجدول  */
+
+    width: 70%;         /*جم ياخد من الشاشة  */
+    border-collapse: collapse;      /*جمج سطرين الاطار ليسبح واحد  */
+
+
 }
 
 
-.schedule-table {
-    width: 70%;
-    border-collapse: collapse;
-}
-
-
+/*  */
 
 .schedule-table th,
 .schedule-table td {
@@ -55,21 +64,22 @@ body {
    /*  text-align:left   center  --> mid */
 }
 
+/*  */
 
 .schedule-table th {
     background-color: #b86ae5; /* add full color for header taberl  */
 }
+/*  */
 
 
-.card-grid {
+.card-grid {        /*  البطايق*/
     display: grid;   /*  grid, Flex         Flexbox 1D --> or         Grid 2D*/
 
-       grid-template-columns: repeat(3, 1fr);  /*  3 columns ,  1fr == الكل متساوي (عادل)*/
+    grid-template-columns: repeat(3, 1fr);  /*  3 columns ,حصة  1fr == الكل متساوي (عادل) */
     /* grid-template-columns: 1fr 1fr 1fr; */
-    
-
     gap: 20px;   /* الفراغ بين المربعات */
 }
+/*  */
 
 .card {
     padding: 12px; /* مسافة في جميع الحواف */
@@ -88,17 +98,18 @@ body {
 
 
 
-.weight { /* grade 40,25,20,15%  */
+.weight { /*mark grade 40,25,20,15%  */
     font-size: 24px; 
     font-weight: bold;  
     color: #920b0b;
+    
 }
 
 
 .register-form {
     display: flex; /* يجعلها مرنة قابلة للتمدد والتكيف على الصفحة */
     flex-direction: column;/* يجعلها افقية كل عنصر في سطر  */
-    gap: 18px;/*  مسافة بين العناصر */
+    gap: 20px;/*  مسافة بين العناصر */
 
 }
 
@@ -124,9 +135,9 @@ body {
     padding: 10px 16px;           /*المقاس  */
     background-color: #17365d;  /*لون الخلفية  */
     color: white;               /*  لون الخط*/
-    border: 2px solid #000000;  /* الاطار */
+    border: 3px solid #000000;  /* الاطار */
     border-radius: 20px;            /*   الحواف الانحناء*/
-    cursor: pointer;                /*   عند التمرير عليةيجعلة*/
+    cursor: pointer;                /*   شكل الموس عند*/
 }
 
 
@@ -136,13 +147,17 @@ body {
 }
 
 
-.site-footer {                      /*  */
+.site-footer {                      /* الذيل */
     padding: 16px;                  /*  مساحة في الاطراف*/
     text-align: center;             /*النص في النص  */
     background-color: #17365d;    /* اللون الخلفية */
     color: white;                 /*لون الخط  */
     border-radius: 25px;            /*   الحواف الانحناء*/
     font-size: 33px;    
+
+    border: 1px solid #38bdf8;/* لون الخلفية */
+    border-bottom: 3px solid #38bdf8;/* solid ,dashed for add line in end_____ */
+
 
 }
 
